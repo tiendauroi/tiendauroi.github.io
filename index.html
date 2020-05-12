@@ -1,533 +1,366 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="https://tiendauroi.github.io/xmlrpc.php">
-	
-<title></title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://tiendauroi.github.io/index.php/feed/" />
-<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://tiendauroi.github.io/index.php/comments/feed/" />
-<!-- This site uses the Google Analytics by MonsterInsights plugin v7.4.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
-<!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
-<!-- No UA code set -->
-<!-- / Google Analytics by MonsterInsights -->
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/tiendauroi.github.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-	<link rel='stylesheet' id='sydney-bootstrap-css'  href='https://tiendauroi.github.io/wp-content/themes/sydney/css/bootstrap/bootstrap.min.css?ver=1' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css'  href='https://tiendauroi.github.io/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='contact-form-7-css'  href='https://tiendauroi.github.io/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.1' type='text/css' media='all' />
-<link rel='stylesheet' id='siteorigin-panels-front-css'  href='https://tiendauroi.github.io/wp-content/plugins/siteorigin-panels/css/front-flex.min.css?ver=2.10.2' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-icon-default-8d396d6351c2-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-icon-default-8d396d6351c2.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sydney-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C400i%2C700%26amp%3Bsubset%3Dvietnamese%7COpen+Sans%3A500%2C500i%2C600' type='text/css' media='all' />
-<link rel='stylesheet' id='sydney-style-css'  href='https://tiendauroi.github.io/wp-content/themes/sydney/style.css?ver=20180213' type='text/css' media='all' />
-<style id='sydney-style-inline-css' type='text/css'>
-body, #mainnav ul ul a { font-family:'Roboto', sans-serif!important;}
-h1, h2, h3, h4, h5, h6, #mainnav ul li a, .portfolio-info, .roll-testimonials .name, .roll-team .team-content .name, .roll-team .team-item .team-pop .name, .roll-tabs .menu-tab li a, .roll-testimonials .name, .roll-project .project-filter li a, .roll-button, .roll-counter .name-count, .roll-counter .numb-count button, input[type="button"], input[type="reset"], input[type="submit"] { font-family:'Open Sans', sans-serif;}
-.site-title { font-size:32px; }
-.site-description { font-size:18px; }
-#mainnav ul li a { font-size:16px; }
-h1 { font-size:52px; }
-h2 { font-size:42px; }
-h3 { font-size:27px; }
-h4 { font-size:25px; }
-h5 { font-size:22px; }
-h6 { font-size:20px; }
-body { font-size:16px; }
-.single .hentry .title-post { font-size:32px; }
-.header-image { background-size:cover;}
-.header-image { height:300px; }
-.site-header.fixed { position: absolute;}
-.header-wrap .col-md-4, .header-wrap .col-md-8 { width: 100%; text-align: center;}
-#mainnav { float: none;}
-#mainnav li { float: none; display: inline-block;}
-#mainnav ul ul li { display: block; text-align: left; float:left;}
-.site-logo, .header-wrap .col-md-4 { margin-bottom: 15px; }
-.btn-menu { margin: 0 auto; float: none; }
-.header-wrap .container > .row { display: block; }
-.site-header.float-header { background-color:rgba(0,0,0,0.9);}
-@media only screen and (max-width: 1024px) { .site-header { background-color:#000000;}}
-.site-title a, .site-title a:hover { color:#ffffff}
-.site-description { color:#ffffff}
-#mainnav ul li a, #mainnav ul li::before { color:#ffffff}
-#mainnav .sub-menu li a { color:#ffffff}
-#mainnav .sub-menu li a { background:#1c1c1c}
-.text-slider .maintitle, .text-slider .subtitle { color:#ffffff}
-body { color:#47425d}
-#secondary { background-color:#ffffff}
-#secondary, #secondary a, #secondary .widget-title { color:#767676}
-.footer-widgets { background-color:#0c0c0c}
-.btn-menu { color:#ffffff}
-#mainnav ul li a:hover { color:#d65050}
-.site-footer { background-color:#1c1c1c}
-.site-footer,.site-footer a { color:#eaeaea}
-.overlay { background-color:#000000}
-.page-wrap { padding-top:0px;}
-.page-wrap { padding-bottom:0px;}
-.slide-inner { display:none;}
-.slide-inner.text-slider-stopped { display:block;}
-@media only screen and (max-width: 1025px) {		
-			.mobile-slide {
-				display: block;
-			}
-			.slide-item {
-				background-image: none !important;
-			}
-			.header-slider {
-			}
-			.slide-item {
-				height: auto !important;
-			}
-			.slide-inner {
-				min-height: initial;
-			} 
-		}
-@media only screen and (max-width: 780px) { 
-    	h1 { font-size: 32px;}
-		h2 { font-size: 28px;}
-		h3 { font-size: 22px;}
-		h4 { font-size: 18px;}
-		h5 { font-size: 16px;}
-		h6 { font-size: 14px;}
+  <!-- Template prototype & content definition. Type: Nier-list source: hoanganhdinhngoc.github.io/cdn/core-system-project -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shortcut giúp tiết kiệm thời gian cho team Tiendauroi"/>
+	<meta name="author" content="HoangAnhDinhNgoc" />
+  <!--
+//////////////////////////////////////////////////////
+
+MADE with <3 by Hoang Anh Dinh Ngoc
+
+Website: 		http://hoanganhdinhngoc.github.io
+Email: 			hanh2122011@gmail.com
+Twitter: 		https://twitter.com/Hanh2122011
+Facebook: 	https://www.facebook.com/HoangAnhDinhNgoc
+LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
+
+//////////////////////////////////////////////////////
+ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <link rel='stylesheet' href='style.css'/> -->
+	<!-- <script src='script.js'></script> -->
+  <title>Tiendauroi shortcut dashboard</title>
+
+  <!-- CSS STYLE SECTION -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400');
+
+
+    * {
+    margin: 0px;
+    padding: 0px;
     }
 
-</style>
-<link rel='stylesheet' id='sydney-font-awesome-css'  href='https://tiendauroi.github.io/wp-content/themes/sydney/fonts/font-awesome.min.css?ver=5.1.1' type='text/css' media='all' />
-<!--[if lte IE 9]>
-<link rel='stylesheet' id='sydney-ie9-css'  href='https://tiendauroi.github.io/wp-content/themes/sydney/css/ie9.css?ver=5.1.1' type='text/css' media='all' />
-<![endif]-->
-<link rel='stylesheet' id='wpglobus-css'  href='https://tiendauroi.github.io/wp-content/plugins/wpglobus/includes/css/wpglobus.css?ver=1.9.13' type='text/css' media='all' />
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    .title {
+      padding: 20px;
+      font-family: 'Montserrat', sans-serif;
+      color: #4b4340;
+      text-shadow: 4px 5px rgba(162,156,142,.8);
+    }
+
+    .sectionTitle {
+      padding: 1% 1%;
+      color: #d3cebb;
+      background: rgba(100,98,86,0.8);
+    }
+
+    body {
+      background-color: #ccc6b0;
+      background-image: linear-gradient(90deg, rgba(198,192,170,.5) 30%, transparent 30%),
+      linear-gradient(rgba(198,192,170,.5) 30%, transparent 30%);
+      background-size:5px 5px;
+    }
+
+    .coreSystem {
+      height: 1000em;
+      box-shadow: inset 0px 0px 100px 20px rgba(0,0,0, 0.3);
+    }
+
+    .section {
+      margin: 20px 30px;
+      padding: 0 0 1px 0;
+      background: rgba(216,210,186,.5);
+      font-family: 'Montserrat', sans-serif;
+      line-height: 20pt;
+      color:  #4b4340;
+      box-shadow: 2px 2px 1px #4f4b42;
+    }
+
+    .dropContent {
+      display: block;
+      padding: 2px;
+      margin: 3px 8px;
+      cursor: pointer;
+    }
+
+    .dropContent:hover {
+      color: #d3cebb;
+      background: rgba(0,0,0,0.2);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0px 8px;
+    }
+
+    li {
+      margin-left: 20px;
+    }
+
+    .selected {
+      font-weight: bold;
+    }
+
+    .top-logo {
+      margin: 0px 30px;
+      padding: 0 0 1px 0;
+      filter: saturate(30%);
+    }
+
+    a {
+      color: #4b4340;
+      font-weight: bold;
+    }
+
+  </style>
+
+</head>
+<body>
+<div class='coreSystem'>
+  <h1 class="title">Tiendauroi's shortcut dashboard</h1>
+
+
+  <a href="https://www.tiendauroi.com/" class="logo" target="_blank">
+					<img width="275" height="80" src="https://www.tiendauroi.com/wp-content/uploads/2020/03/logo-slogan-5.png" class="top-logo" alt="" srcset="https://www.tiendauroi.com/wp-content/uploads/2020/03/logo-slogan-5.png 275w, https://www.tiendauroi.com/wp-content/uploads/2020/03/logo-slogan-5-150x44.png 150w" sizes="(max-width: 275px) 100vw, 275px"></a>
+
+  <!-- System Info -->
+
+
+  <div class='section' id='info'>
+      <h2 class="tutorial" style='padding: 1% 1%; cursor: pointer;'>Hướng dẫn</h2>
+      <ul class='content'>
+        <li><p><b>Sử dụng: </b>Ấn vào mục tương ứng với việc mình định làm. Chọn link và nó sẽ bật ra trang làm việc. Vậy hoy.</p></li>
+        <li>Dùng trang này sẽ giúp tiết kiệm nhiều thời gian cho contentwriter, và giảm tải cho thanh bookmark.
+        <li><p>Lưu cái này vào bookmark để làm việc mở cho dễ nhé!</li>
+      </ul>
+  </div>
+
+  <!-- Section 1 -->
+
+  <div class='section' id='section1'>
+      <h2 class='sectionTitle'>Viết bài</h2>
+      <div class='dropContent'>Viết blogpost</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/post-new.php" target="_blank">Tạo blog post mới</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/edit.php" target="_blank">Xem list blog post</a></p></li>
+      </ul>
+      <div class='dropContent'>Viết deal lẻ</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/post-new.php?post_type=coupon" target="_blank">Viết deal mới</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/edit.php?post_type=coupon" target="_blank">Xem danh sách deal</a></p></li>
+      </ul>
+      <div class='dropContent'>Cập nhật bài tổng hợp (category)</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/edit-tags.php?taxonomy=coupon-category&post_type=coupon" target="_blank">Danh sách category</a></p></li>
+        <br>
+        <li><h2>Nhóm thương mại điện tử: </h2></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=274&post_type=coupon" target="_blank">Khuyến mãi Shopee</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=262&post_type=coupon" target="_blank">Khuyến mãi Tiki</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=272&post_type=coupon" target="_blank">Khuyến mãi Lazada</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=273&post_type=coupon" target="_blank">Khuyến mãi Sendo</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=508&post_type=coupon" target="_blank">Khuyến mãi Nguyen Kim</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=507&post_type=coupon" target="_blank">Khuyến mãi Yes24</a></p></li>
+        <br>
+        <li><h2>Nhóm gọi xe & giao đồ ăn: </h2></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=155&post_type=coupon" target="_blank">Cập nhật mã giảm giá Baemin</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=177&post_type=coupon" target="_blank">Cập nhật mã giảm giá Grab</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=154&post_type=coupon" target="_blank">Cập nhật mã giảm giá NOW</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=179&post_type=coupon" target="_blank">Cập nhật mã giảm giá Grabfood</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=175&post_type=coupon" target="_blank">Cập nhật mã giảm giá Be</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=150&post_type=coupon" target="_blank">Cập nhật mã giảm giá Goviet</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=147&post_type=coupon" target="_blank">Cập nhật mã giảm giá Grabexpress</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=156&post_type=coupon" target="_blank">Cập nhật mã giảm giá Loship</a></p></li>
+        <br>
+        <li><h2>Nhóm ăn uống: </h2></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=137&post_type=coupon" target="_blank">Cà Phê - Trà Sữa</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=138&post_type=coupon" target="_blank">Lẩu</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=299&post_type=coupon" target="_blank">Nướng</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=133&post_type=coupon" target="_blank">Đồ ăn nhanh</a></p></li>
+        <br>
+        <li><h2>Nhóm ví điện tử - thẻ: </h2></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=132&post_type=coupon" target="_blank">Điện nước internet</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=168&post_type=coupon" target="_blank">Momo</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=170&post_type=coupon" target="_blank">VNpay</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=163&post_type=coupon" target="_blank">VinID</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=296&post_type=coupon" target="_blank">Zalopay</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=169&post_type=coupon" target="_blank">Airpay</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=201&post_type=coupon" target="_blank">Senpay</a></p></li>
+        <br>
+        <li><h2>Nhóm đi chơi, du lịch: </h2></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=76&post_type=coupon" target="_blank">Khuyến mãi xem phim</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=140&post_type=coupon" target="_blank">Vé máy bay</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=85&post_type=coupon" target="_blank">Tour giá tốt</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=84&post_type=coupon" target="_blank">Đặt phòng tổng hợp</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=157&post_type=coupon" target="_blank">Traveloka</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=152&post_type=coupon" target="_blank">Agoda</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=143&post_type=coupon" target="_blank">Luxstay</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=151&post_type=coupon" target="_blank">Reddoorz</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=268&post_type=coupon" target="_blank">OYO</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=269&post_type=coupon" target="_blank">Spaceshare</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=159&post_type=coupon" target="_blank">Klook</a></p></li>
+        <br>
+        <li>Còn một số cái lẻ nữa, nhiều lắm ví dụ <a href="https://www.tiendauroi.com/wp-admin/term.php?taxonomy=coupon-category&tag_ID=173&post_type=coupon" target="_blank">Tổng hợp ưu đãi sách</a>. Lâu lâu nhớ tổng hợp lại nhé</li>
+
+      </ul>
+  </div>
+
+  <!-- Section 2 -->
+
+  <div class='section' id='section2'>
+      <h2 class='sectionTitle'>Thay ads</h2>
+      <div class='dropContent'>Định nghĩa vị trí lên ads</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/admin.php?page=_options&tab=12" target="_blank">Couponis Advertising</a></p></li>
+        <li><p><b>Mô tả: </b>Đây là nơi quy định block ads nào đặt ở chỗ nào, chọn tên block ads để thể hiện</p></li>
+      </ul>
+      <div class='dropContent'>Setup ads</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/edit.php?post_type=extrapage" target="_blank">Trang setup chung</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/post.php?post=21342&action=edit&classic-editor" target="_blank">Ads trên các bài tổng hợp đồ ăn</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/post.php?post=20484&action=edit&classic-editor" target="_blank">Header bar ads</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/post.php?post=19934&action=edit&classic-editor" target="_blank">Side banner ads</a></p></li>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/post.php?post=18247&action=edit&classic-editor" target="_blank">House ads toàn trang</a></p></li>
+      </ul>
+  </div>
+
+  <!-- Section 3 -->
+
+  <div class='section' id='section3'>
+      <h2 class='sectionTitle'>Airtable</h2>
+      <div class='dropContent'>Cập nhật tự động mã giảm giá</div>
+      <ul class='content'>
+        <li><p><a href="https://airtable.com/tbluxDrnseWxOl09w/viwHZhx5qozqDZMMO" target="_blank">Cập nhật mã giảm giá</a></p></li>
+      </ul>
+      <div class='dropContent'>Quản lý CTV</div>
+      <ul class='content'>
+        <li><p><a href="https://airtable.com/tblMWBP6kcEHorqsF/viwuQciG0OO6hHRn1" target="_blank">Bài viết CTV</a></p></li>
+      </ul>
+  </div>
+
+  <!-- Section 4 -->
+
+  <div class='section' id='section4'>
+      <h2 class='sectionTitle'>Xem traffic</h2>
+
+      <div class='dropContent'>Google Analytics 7 days</div>
+      <ul class='content'>
+        <li><p><a href="https://analytics.google.com/analytics/web/#/report/visitors-overview/a99123203w168698282p168749691/overview-graphOptions.primaryConcept=analytics.totalVisitors" target="_blank">User</a></p></li>
+        <li><p><a href="https://analytics.google.com/analytics/web/#/report/content-pages/a99123203w168698282p168749691/" target="_blank">Pageviews</a></p></li>
+        <li><p><a href="https://analytics.google.com/analytics/web/#/report/content-engagement-flow/a99123203w168698282p168749691/" target="_blank">Behavior flow</a></p></li>
+        <li><p><a href="https://analytics.google.com/analytics/web/#/realtime/rt-overview/a99123203w168698282p168749691/" target="_blank">Realtime</a></p></li>
+        <li><p><a href="https://analytics.google.com/analytics/web/#/report/trafficsources-overview/a99123203w168698282p168749691/" target="_blank">Acquisition Overview</a></p></li>
+      </ul>
+      <div class='dropContent'>Search console</div>
+      <ul class='content'>
+      <li><p><a href="https://search.google.com/search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.tiendauroi.com%2F&query=*mã%20giảm%20giá%20baemin" target="_blank">Mã giảm giá Baemin</a></p></li>
+      <li><p><a href="https://search.google.com/search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.tiendauroi.com%2F&query=*mã%20giảm%20giá%20now" target="_blank">Mã giảm giá NOW</a></p></li>
+      <li><p><a href="https://search.google.com/search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.tiendauroi.com%2F&query=*mã%20giảm%20giá%20grabfood" target="_blank">Mã giảm giá Grabfood</a></p></li>
+      </ul>
+      <div class='dropContent'>Yandex Metrica</div>
+      <ul class='content'>
+      <li><p><a href="https://metrica.yandex.com/dashboard?group=day&period=week&id=56082535" target="_blank">Dashboard</a></p></li>
+      <li><p><a href="https://metrica.yandex.com/stat/visor?period=week&id=56082535" target="_blank">Session Replay</a></p></li>
+      <br>
+      ID: team@buybulous.com,
+      maketdr**********
+
+
+      </ul>
+
+  </div>
+
+  <!-- Section 5 -->
+
+  <div class='section' id='section4'>
+      <h2 class='sectionTitle'>Dùng tool</h2>
+
+      <div class='dropContent'>Chuyển cột thành list</div>
+      <ul class='content'>
+        <li><p><a href="hoanganhdinhngoc.github.io/cdn/column-to-list-converter.html" target="_blank">Column-to-list-converter</a></p></li>
+        <li><p><b>Mô tả: </b>Dùng khi cần link một record airtale tói nhiều record khác, ví dụ như khi tính lương cho ctv theo số bài.</p></li>
+      </ul>
+
+      <div class='dropContent'>Tạo nội dung rút gọn</div>
+      <ul class='content'>
+        <li><p><a href="https://hoanganhdinhngoc.github.io/cdn/create-summary.html" target="_blank">Create-summary</a></p></li>
+        <li><p><b>Mô tả: </b>Tạo phần "Xem thêm:" để rút gọn các nội dung dài.</p></li>
+      </ul>
+
+      <div class='dropContent'>Tool tạo bảng lấy mã</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/tool-tao-bang-lay-ma/" target="_blank">Tool-tao-bang-lay-ma</a></p></li>
+        <li><p><b>Mô tả: </b>Dùng cái này để tạo các bảng đưa mã cho người dùng, dùng trong bài lẻ hoặc bài tổng hợp đều được.</p></li>
+      </ul>
+
+      <div class='dropContent'>Tool tạo list "sản phẩm nổi bật"</div>
+      <ul class='content'>
+        <li><p><a href="https://gilcodes.github.io/featuredproducts/" target="_blank">Featuredproducts</a></p></li>
+        <li><p><b>Mô tả: </b>Dùng cái này để tạo các bảng đưa mã cho người dùng, dùng trong bài lẻ hoặc bài tổng hợp đều được. Xem hướng dẫn sử dụng <a href="https://quip.com/xl8qAelPPOBb" target="_blank">Tại đây.</a></p></li>
+      </ul>
+    </div>
+
+    <!-- Section 6 -->
+
+  <div class='section' id='section4'>
+      <h2 class='sectionTitle'>Các tùy biến khác</h2>
+
+      <div class='dropContent'>Link redirection</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/tools.php?page=redirection.php" target="_blank">Redirection</a></p></li>
+        <li><p><b>Mô tả: </b>Dùng cái này để redirect link trong trang</p></li>
+      </ul>
+      <div class='dropContent'>Add code vào source = 99 robots</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/admin.php?page=hfcm-list" target="_blank">HFCM</a></p></li>
+        <li><p><b>Mô tả: </b>Dùng để add code vào trang</p></li>
+      </ul>
+      <div class='dropContent'>Sửa top button</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/post.php?post=18236&action=edit&classic-editor" target="_blank">Danh mục coupon extend</a></p></li>
+        <li><p><b>Mô tả: </b>Dùng sửa icon và link các button đầu trang</p></li>
+      </ul>
+      <div class='dropContent'>Sửa trang chủ</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/post.php?post=2619&action=edit" target="_blank">Sửa trang chủ</a></p></li>
+        <li><p><b>Mô tả: </b>Sửa banner đầu trang tại đây. Trong block Image list: Style: Mặc định - Homepage Banner</p></li>
+      </ul>
+      <div class='dropContent'>Tùy biến element trang chủ</div>
+      <ul class='content'>
+        <li><p><a href="https://www.tiendauroi.com/wp-admin/customize.php?url=https%3A%2F%2Fwww.tiendauroi.com%2F" target="_blank">Customize trang chủ</a></p></li>
+        <li><p><b>Mô tả: </b>Có thể sửa được trang chủ hoặc các trang khác. Sau khi đăng nhập tk admin, vào giao diện người dùng và chọn "Tùy biến" ở menu sửa trang trên cùng.</p></li>
+      </ul>
+
+
+
+
+
+  </div>
+
+
+</div>
+
+
+  <!-- SCRIPT -->
+
 <script type='text/javascript'>
-/* <![CDATA[ */
-var userSettings = {"url":"\/tiendauroi\/","uid":"0","time":"1552758291","secure":""};
-/* ]]> */
+
+    // fade in section
+    $('.section').hide();
+    $('.section').fadeIn(500);
+
+    // hide all content class to toggle
+    $('.content').hide();
+
+    //toggle dropContent
+    $('.dropContent').click(function() {
+        $(this).next().slideToggle(300);
+        $(this).toggleClass("selected");
+    });
+    $('.tutorial').click(function() {
+        $(this).next().slideToggle(300);
+    });
+
+
+
+
+
 </script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-includes/js/utils.min.js?ver=5.1.1'></script>
-<link rel='https://api.w.org/' href='https://tiendauroi.github.io/index.php/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tiendauroi.github.io/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://tiendauroi.github.io/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 5.1.1" />
-<link rel="canonical" href="https://tiendauroi.github.io/" />
-<link rel='shortlink' href='https://tiendauroi.github.io/' />
-<link rel="alternate" type="application/json+oembed" href="https://tiendauroi.github.io/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftiendauroi.github.io%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://tiendauroi.github.io/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftiendauroi.github.io%2F&#038;format=xml" />
-			<style type="text/css" media="screen">
-				.wpglobus_flag_en{background-image:url(https://tiendauroi.github.io/wp-content/plugins/wpglobus/flags/us.png)}
-.wpglobus_flag_vi{background-image:url(https://tiendauroi.github.io/wp-content/plugins/wpglobus/flags/vn.png)}
-			</style>
-			<link rel="alternate" hreflang="en-US" href="https://tiendauroi.github.io/" /><link rel="alternate" hreflang="vi" href="https://tiendauroi.github.io/vi/" />                <style type="text/css" media="all"
-                       id="siteorigin-panels-layouts-head">/* Layout 233 */ #pgc-233-0-0 , #pgc-233-1-0 , #pgc-233-2-0 , #pgc-233-3-0 , #pgc-233-5-0 , #pgc-233-7-0 , #pgc-233-9-0 { width:100%;width:calc(100% - ( 0 * 30px ) ) } #pl-233 #panel-233-0-0-0 , #pl-233 #panel-233-1-0-0 , #pl-233 #panel-233-1-0-1 , #pl-233 #panel-233-2-0-0 , #pl-233 #panel-233-2-0-1 , #pl-233 #panel-233-3-0-0 , #pl-233 #panel-233-4-0-0 , #pl-233 #panel-233-4-0-1 , #pl-233 #panel-233-4-1-0 , #pl-233 #panel-233-4-1-1 , #pl-233 #panel-233-4-2-0 , #pl-233 #panel-233-4-2-1 , #pl-233 #panel-233-5-0-0 , #pl-233 #panel-233-6-0-0 , #pl-233 #panel-233-6-1-0 , #pl-233 #panel-233-6-2-0 , #pl-233 #panel-233-6-3-0 , #pl-233 #panel-233-6-4-0 , #pl-233 #panel-233-7-0-0 , #pl-233 #panel-233-8-0-0 , #pl-233 #panel-233-8-1-0 , #pl-233 #panel-233-9-0-0 {  } #pg-233-0 , #pg-233-2 , #pg-233-3 , #pg-233-5 , #pg-233-6 , #pg-233-9 , #pl-233 .so-panel , #pl-233 .so-panel:last-child { margin-bottom:0px } #pg-233-1 , #pg-233-4 , #pg-233-7 , #pg-233-8 { margin-bottom:45px } #pgc-233-4-0 , #pgc-233-4-1 , #pgc-233-4-2 { width:33.3333% } #pgc-233-6-0 , #pgc-233-6-1 , #pgc-233-6-2 , #pgc-233-6-3 , #pgc-233-6-4 { width:20%;width:calc(20% - ( 0.8 * 30px ) ) } #pgc-233-8-0 , #pgc-233-8-1 { width:50%;width:calc(50% - ( 0.5 * 30px ) ) } #pg-233-0> .panel-row-style { padding:5% } #pg-233-0.panel-no-style, #pg-233-0.panel-has-style > .panel-row-style , #pg-233-1.panel-no-style, #pg-233-1.panel-has-style > .panel-row-style , #pg-233-2.panel-no-style, #pg-233-2.panel-has-style > .panel-row-style , #pg-233-3.panel-no-style, #pg-233-3.panel-has-style > .panel-row-style , #pg-233-4.panel-no-style, #pg-233-4.panel-has-style > .panel-row-style , #pg-233-5.panel-no-style, #pg-233-5.panel-has-style > .panel-row-style , #pg-233-6.panel-no-style, #pg-233-6.panel-has-style > .panel-row-style , #pg-233-7.panel-no-style, #pg-233-7.panel-has-style > .panel-row-style , #pg-233-8.panel-no-style, #pg-233-8.panel-has-style > .panel-row-style { -webkit-align-items:flex-start;align-items:flex-start } #panel-233-0-0-0> .panel-widget-style { padding:13% 13% 13% 13% } #pg-233-1> .panel-row-style , #pg-233-7> .panel-row-style { padding:8% } #panel-233-1-0-1> .panel-widget-style { padding:3% 3% 3% 3% } #pg-233-4> .panel-row-style , #pg-233-8> .panel-row-style { padding:0% } #pgc-233-4-0 { align-self:auto } #panel-233-4-0-0> .panel-widget-style , #panel-233-4-1-0> .panel-widget-style , #panel-233-4-2-0> .panel-widget-style { padding:60px 60px 60px 60px } #panel-233-4-0-1> .panel-widget-style , #panel-233-4-1-1> .panel-widget-style , #panel-233-4-2-1> .panel-widget-style , #panel-233-8-0-0> .panel-widget-style { padding:5% 5% 0% 5% } #pg-233-5> .panel-row-style { background-color:#8aacae;padding:8% } #pg-233-6> .panel-row-style { background-color:#8aacae;padding:0% } @media (max-width:780px){ #pg-233-0.panel-no-style, #pg-233-0.panel-has-style > .panel-row-style , #pg-233-1.panel-no-style, #pg-233-1.panel-has-style > .panel-row-style , #pg-233-2.panel-no-style, #pg-233-2.panel-has-style > .panel-row-style , #pg-233-3.panel-no-style, #pg-233-3.panel-has-style > .panel-row-style , #pg-233-4.panel-no-style, #pg-233-4.panel-has-style > .panel-row-style , #pg-233-5.panel-no-style, #pg-233-5.panel-has-style > .panel-row-style , #pg-233-6.panel-no-style, #pg-233-6.panel-has-style > .panel-row-style , #pg-233-7.panel-no-style, #pg-233-7.panel-has-style > .panel-row-style , #pg-233-8.panel-no-style, #pg-233-8.panel-has-style > .panel-row-style , #pg-233-9.panel-no-style, #pg-233-9.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-233-0 .panel-grid-cell , #pg-233-1 .panel-grid-cell , #pg-233-2 .panel-grid-cell , #pg-233-3 .panel-grid-cell , #pg-233-4 .panel-grid-cell , #pg-233-5 .panel-grid-cell , #pg-233-6 .panel-grid-cell , #pg-233-7 .panel-grid-cell , #pg-233-8 .panel-grid-cell , #pg-233-9 .panel-grid-cell { margin-right:0 } #pg-233-0 .panel-grid-cell , #pg-233-1 .panel-grid-cell , #pg-233-2 .panel-grid-cell , #pg-233-3 .panel-grid-cell , #pg-233-4 .panel-grid-cell , #pg-233-5 .panel-grid-cell , #pg-233-6 .panel-grid-cell , #pg-233-7 .panel-grid-cell , #pg-233-8 .panel-grid-cell , #pg-233-9 .panel-grid-cell { width:100% } #pgc-233-4-0 , #pgc-233-4-1 , #pgc-233-6-0 , #pgc-233-6-1 , #pgc-233-6-2 , #pgc-233-6-3 , #pgc-233-8-0 , #pl-233 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px } #pl-233 .panel-grid-cell { padding:0 } #pl-233 .panel-grid .panel-grid-cell-empty { display:none }  } </style>		<style type="text/css" id="wp-custom-css">
-			.roll-button, .button-slider {
-	display:none;
-}
 
-.title-post, .entry-title {
-	display: none;
-}
 
-.so-widget-sow-image-default-bd5cd9da0588 {
-	filter: grayscale(1.0);
-	transition: 0.6s;
-}
-
-.so-widget-sow-image-default-bd5cd9da0588:hover {
-	filter: grayscale(0.2);
-	transition: 0.6s;
-}		</style>
-		</head>
-
-<body class="home page-template page-template-page-templates page-template-page_front-page page-template-page-templatespage_front-page-php page page-id-233 siteorigin-panels siteorigin-panels-before-js siteorigin-panels-home">
-
-	<div class="preloader">
-	    <div class="spinner">
-	        <div class="pre-bounce1"></div>
-	        <div class="pre-bounce2"></div>
-	    </div>
-	</div>
-	
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
-	
-	<header id="masthead" class="site-header" role="banner">
-		<div class="header-wrap">
-            <div class="container">
-                <div class="row">
-				<div class="col-md-4 col-sm-8 col-xs-12">
-		        					<h1 class="site-title"><a href="https://tiendauroi.github.io/" rel="home"></a></h1>
-					<h2 class="site-description"></h2>	        
-		        				</div>
-				<div class="col-md-8 col-sm-4 col-xs-12">
-					<div class="btn-menu"></div>
-					<nav id="mainnav" class="mainnav" role="navigation">
-						<div class="menu-menu-1-container"><ul id="menu-menu-1" class="menu"><li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-33"><a href="https://tiendauroi.github.io/" aria-current="page">Home Page</a></li>
-<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="https://tiendauroi.github.io/index.php/menu-1-2/">About Us</a></li>
-<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="https://tiendauroi.github.io/index.php/menu-1-3/">Contact</a></li>
-<li id="menu-item-9999999999" class="menu-item menu-item-type-custom menu-item-object-custom menu_item_wpglobus_menu_switch wpglobus-selector-link wpglobus-current-language menu-item-9999999999"><a href="https://tiendauroi.github.io/"><span class="wpglobus_language_full_name">English</span></a>
-<ul class="sub-menu">
-	<li id="menu-item-wpglobus_menu_switch_vi" class="menu-item menu-item-type-custom menu-item-object-custom sub_menu_item_wpglobus_menu_switch wpglobus-selector-link menu-item-wpglobus_menu_switch_vi"><a href="https://tiendauroi.github.io/vi/"><span class="wpglobus_language_full_name">Tiếng Việt</span></a></li>
-</ul>
-</li>
-</ul></div>					</nav><!-- #site-navigation -->
-				</div>
-				</div>
-			</div>
-		</div>
-	</header><!-- #masthead -->
-
-	
-	<div class="sydney-hero-area">
-		
-    <div id="slideshow" class="header-slider" data-speed="0" data-mobileslider="responsive">
-        <div class="slides-container">
-
-                                <div class="slide-item slide-item-1" style="background-image:url('https://tiendauroi.github.io/wp-content/uploads/2018/04/Banner.png');">
-                    <img class="mobile-slide preserve" src="https://tiendauroi.github.io/wp-content/uploads/2018/04/Banner.png" alt=""/>
-                    <div class="slide-inner">
-                        <div class="contain animated fadeInRightBig text-slider">
-                        <h2 class="maintitle"></h2>
-                        <p class="subtitle"></p>
-                        </div>
-                        <a href="#primary" class="roll-button button-slider">See more</a>                    </div>
-                </div>
-                
-        </div>  
-                        
-    <div class="slide-inner text-slider-stopped">
-        <div class="contain text-slider">
-            <h2 class="maintitle"></h2>
-            <p class="subtitle"></p>
-        </div>
-        <a href="#primary" class="roll-button button-slider">See more</a>    </div>   
-                </div>
-
-    		<div class="header-image">
-			<div class="overlay"></div>			<img class="header-inner" src="https://tiendauroi.github.io/wp-content/themes/sydney/images/header.jpg" width="1920" alt="" title="">
-		</div>
-		
-			</div>
-
-	
-	<div id="content" class="page-wrap">
-		<div class="container content-wrapper">
-			<div class="row">	
-	<div id="primary" class="fp-content-area">
-		<main id="main" class="site-main" role="main">
-
-			<div class="entry-content">
-									<div id="pl-233"  class="panel-layout" ><div id="pg-233-0"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-0" style="background-image: url(https://tiendauroi.github.io/wp-content/uploads/2018/04/tiendauroi-website-moved-imager.png);padding: 5% 0; " data-stretch-type="full-stretched" data-hasbg="hasbg" data-overlay="true" data-overlay-color="#000000" ><div id="pgc-233-0-0"  class="panel-grid-cell" ><div id="panel-233-0-0-0" class="so-panel widget widget_sow-headline panel-first-child panel-last-child" data-index="0" ><div style="text-align: left;" data-title-color="#ececec" data-headings-color="#ececec" class="panel-widget-style panel-widget-style-for-233-0-0-0" ><div class="so-widget-sow-headline so-widget-sow-headline-default-dc2cd140d595"><div class="sow-headline-container ">
-	<h3 class='sow-sub-headline'>"Never buy full price again"</h3></div></div></div></div></div></div></div><div id="pg-233-1"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-1" style="padding: 8% 0; " id="services" data-stretch-type="full" data-overlay="true" ><div id="pgc-233-1-0"  class="panel-grid-cell" ><div id="panel-233-1-0-0" class="so-panel widget widget_sow-headline panel-first-child" data-index="1" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-1-0-0" ><div class="so-widget-sow-headline so-widget-sow-headline-default-52dfba112210"><div class="sow-headline-container ">
-	<h1 class='sow-headline'>OUR SERVICES</h1>					<div class="decoration">
-						<div class="decoration-inside"></div>
-					</div>
-					<p class='sow-sub-headline'>Together, we help you find a best price anywhere, anytime.</p></div></div></div></div><div id="panel-233-1-0-1" class="so-panel widget widget_sow-features panel-last-child" data-index="2" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-1-0-1" ><div class="so-widget-sow-features so-widget-sow-features-default-0cf5901baecd">
-<div class="sow-features-list sow-features-responsive">
-
-			
-			<div class="sow-features-feature sow-icon-container-position-top " style="width: 33.333%">
-
-								<div
-					class="sow-icon-container sow-container-none"
-                    style="color: #404040; "
-					>
-					<span class="sow-icon-elegantline" data-sow-icon="&#xe033;" style="font-size: 54px; color: #333333"></span>				</div>
-				
-				<div class="textwidget">
-											<h5>
-														Find Hot Deals													</h5>
-					
-											<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					
-									</div>
-			</div>
-
-		
-			<div class="sow-features-feature sow-icon-container-position-top " style="width: 33.333%">
-
-								<div
-					class="sow-icon-container sow-container-none"
-                    style="color: #404040; "
-					>
-					<span class="sow-icon-elegantline" data-sow-icon="&#xe001;" style="font-size: 54px; color: #333333"></span>				</div>
-				
-				<div class="textwidget">
-											<h5>
-														Sharing Experiences													</h5>
-					
-											<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					
-									</div>
-			</div>
-
-		
-			<div class="sow-features-feature sow-icon-container-position-top " style="width: 33.333%">
-
-								<div
-					class="sow-icon-container sow-container-none"
-                    style="color: #404040; "
-					>
-					<span class="sow-icon-elegantline" data-sow-icon="&#xe004;" style="font-size: 54px; color: #333333"></span>				</div>
-				
-				<div class="textwidget">
-											<h5>
-														Support community													</h5>
-					
-											<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					
-									</div>
-			</div>
-
-		
-			<div class="sow-features-feature sow-icon-container-position-top sow-features-feature-last-row" style="width: 33.333%">
-
-								<div
-					class="sow-icon-container sow-container-none"
-                    style="color: #404040; "
-					>
-					<span class="sow-icon-elegantline" data-sow-icon="&#xe02b;" style="font-size: 54px; color: #333333"></span>				</div>
-				
-				<div class="textwidget">
-											<h5>
-														Finding Target Customers													</h5>
-					
-											<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					
-									</div>
-			</div>
-
-		
-			<div class="sow-features-feature sow-icon-container-position-top sow-features-feature-last-row" style="width: 33.333%">
-
-								<div
-					class="sow-icon-container sow-container-none"
-                    style="color: #404040; "
-					>
-					<span class="sow-icon-elegantline" data-sow-icon="&#xe049;" style="font-size: 54px; color: #333333"></span>				</div>
-				
-				<div class="textwidget">
-											<h5>
-														Create Ideal Seeding Clouds													</h5>
-					
-											<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					
-									</div>
-			</div>
-
-		
-			<div class="sow-features-feature sow-icon-container-position-top sow-features-feature-last-row" style="width: 33.333%">
-
-								<div
-					class="sow-icon-container sow-container-none"
-                    style="color: #404040; "
-					>
-					<span class="sow-icon-elegantline" data-sow-icon="&#xe00e;" style="font-size: 54px; color: #333333"></span>				</div>
-				
-				<div class="textwidget">
-											<h5>
-														Remarkable Billboards													</h5>
-					
-											<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					
-									</div>
-			</div>
-
-			
-</div>
-</div></div></div></div></div></div><div id="pg-233-2"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-2" style="background-image: url(https://tiendauroi.github.io/wp-content/uploads/2018/04/cash-coins-money-259165.jpg);padding: 100px 0; " id="work" data-stretch-type="full" data-hasbg="hasbg" data-overlay="true" data-overlay-color="#000000" ><div id="pgc-233-2-0"  class="panel-grid-cell" ><div id="panel-233-2-0-0" class="so-panel widget widget_sow-headline panel-first-child" data-index="3" ><div style="text-align: left;" data-title-color="#ffffff" data-headings-color="#ffffff" class="panel-widget-style panel-widget-style-for-233-2-0-0" ><div class="so-widget-sow-headline so-widget-sow-headline-default-fc7f281bd04e"><div class="sow-headline-container ">
-	<h1 class='sow-headline'>OUR WORK</h1>					<div class="decoration">
-						<div class="decoration-inside"></div>
-					</div>
-					<p class='sow-sub-headline'>Construct a healthy community which share helpful life-hack-experiments</p></div></div></div></div><div id="panel-233-2-0-1" class="so-panel widget widget_sow-image-grid panel-last-child" data-index="4" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-2-0-1" ><div class="so-widget-sow-image-grid so-widget-sow-image-grid-default-c51e448a0a62">	<div class="sow-image-grid-wrapper"
-		data-max-width="0"		data-max-height="0">
-					<div class="sow-image-grid-image">
-															</div>
-					<div class="sow-image-grid-image">
-															</div>
-					<div class="sow-image-grid-image">
-															</div>
-					<div class="sow-image-grid-image">
-															</div>
-					<div class="sow-image-grid-image">
-															</div>
-			</div>
-</div></div></div></div></div></div><div id="pg-233-3"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-3" style="padding: 100px 0; " id="team" data-stretch-type="full" data-overlay="true" data-overlay-color="#000000" ><div id="pgc-233-3-0"  class="panel-grid-cell" ><div id="panel-233-3-0-0" class="so-panel widget widget_sow-headline panel-first-child panel-last-child" data-index="5" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-3-0-0" ><div class="so-widget-sow-headline so-widget-sow-headline-default-52dfba112210"><div class="sow-headline-container ">
-	<h1 class='sow-headline'>OUR TEAM</h1>					<div class="decoration">
-						<div class="decoration-inside"></div>
-					</div>
-					<p class='sow-sub-headline'>A group of project managers and developers with a desire of making a best deal hunting community ever</p></div></div></div></div></div></div></div><div id="pg-233-4"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-4" style="padding: 0% 0; " data-stretch-type="full-stretched" data-overlay="true" data-overlay-color="#000000" ><div id="pgc-233-4-0"  class="panel-grid-cell" ><div id="panel-233-4-0-0" class="so-panel widget widget_sow-image panel-first-child" data-index="6" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-4-0-0" ><div class="so-widget-sow-image so-widget-sow-image-default-bd5cd9da0588">
-
-<div class="sow-image-container">
-	<img src="https://tiendauroi.github.io/wp-content/uploads/2018/04/Hunterxx.jpg" width="640" height="640" srcset="https://tiendauroi.github.io/wp-content/uploads/2018/04/Hunterxx.jpg 640w, https://tiendauroi.github.io/wp-content/uploads/2018/04/Hunterxx-150x150.jpg 150w, https://tiendauroi.github.io/wp-content/uploads/2018/04/Hunterxx-300x300.jpg 300w, https://tiendauroi.github.io/wp-content/uploads/2018/04/Hunterxx-230x230.jpg 230w, https://tiendauroi.github.io/wp-content/uploads/2018/04/Hunterxx-350x350.jpg 350w, https://tiendauroi.github.io/wp-content/uploads/2018/04/Hunterxx-480x480.jpg 480w" sizes="(max-width: 640px) 100vw, 640px" alt="" 		class="so-widget-image"/>
-</div>
-
-</div></div></div><div id="panel-233-4-0-1" class="so-panel widget widget_sow-editor panel-last-child" data-index="7" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-4-0-1" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
-<div class="siteorigin-widget-tinymce textwidget">
-	<h3 class="q_team_name" style="text-align: center;">HUNTERXX /  HEAD OF PROGRAMMING &amp; FOUNDER</h3>
-<p style="text-align: center;">Life is awesome. So am I</p>
-</div>
-</div></div></div></div><div id="pgc-233-4-1"  class="panel-grid-cell" ><div id="panel-233-4-1-0" class="so-panel widget widget_sow-image panel-first-child" data-index="8" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-4-1-0" ><div class="so-widget-sow-image so-widget-sow-image-default-bd5cd9da0588">
-
-<div class="sow-image-container">
-	<img src="https://tiendauroi.github.io/wp-content/uploads/2018/04/30415241_1962244650753724_4410421956856250368_n.jpg" width="640" height="640" srcset="https://tiendauroi.github.io/wp-content/uploads/2018/04/30415241_1962244650753724_4410421956856250368_n.jpg 640w, https://tiendauroi.github.io/wp-content/uploads/2018/04/30415241_1962244650753724_4410421956856250368_n-150x150.jpg 150w, https://tiendauroi.github.io/wp-content/uploads/2018/04/30415241_1962244650753724_4410421956856250368_n-300x300.jpg 300w, https://tiendauroi.github.io/wp-content/uploads/2018/04/30415241_1962244650753724_4410421956856250368_n-230x230.jpg 230w, https://tiendauroi.github.io/wp-content/uploads/2018/04/30415241_1962244650753724_4410421956856250368_n-350x350.jpg 350w, https://tiendauroi.github.io/wp-content/uploads/2018/04/30415241_1962244650753724_4410421956856250368_n-480x480.jpg 480w" sizes="(max-width: 640px) 100vw, 640px" alt="" 		class="so-widget-image"/>
-</div>
-
-</div></div></div><div id="panel-233-4-1-1" class="so-panel widget widget_sow-editor panel-last-child" data-index="9" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-4-1-1" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
-<div class="siteorigin-widget-tinymce textwidget">
-	<h3 class="q_team_name" style="text-align: center;">GILGAMESH / HEAD OF CONTENT MANAGEMENT</h3>
-<p style="text-align: center;">What can't be done today, leave it for tomorrow</p>
-</div>
-</div></div></div></div><div id="pgc-233-4-2"  class="panel-grid-cell" ><div id="panel-233-4-2-0" class="so-panel widget widget_sow-image panel-first-child" data-index="10" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-4-2-0" ><div class="so-widget-sow-image so-widget-sow-image-default-bd5cd9da0588">
-
-<div class="sow-image-container">
-	<img src="https://tiendauroi.github.io/wp-content/uploads/2018/04/IMG_8784-high.jpg" width="640" height="640" srcset="https://tiendauroi.github.io/wp-content/uploads/2018/04/IMG_8784-high.jpg 640w, https://tiendauroi.github.io/wp-content/uploads/2018/04/IMG_8784-high-150x150.jpg 150w, https://tiendauroi.github.io/wp-content/uploads/2018/04/IMG_8784-high-300x300.jpg 300w, https://tiendauroi.github.io/wp-content/uploads/2018/04/IMG_8784-high-230x230.jpg 230w, https://tiendauroi.github.io/wp-content/uploads/2018/04/IMG_8784-high-350x350.jpg 350w, https://tiendauroi.github.io/wp-content/uploads/2018/04/IMG_8784-high-480x480.jpg 480w" sizes="(max-width: 640px) 100vw, 640px" alt="" 		class="so-widget-image"/>
-</div>
-
-</div></div></div><div id="panel-233-4-2-1" class="so-panel widget widget_sow-editor panel-last-child" data-index="11" ><div style="text-align: left;" data-title-color="#443f3f" data-headings-color="#443f3f" class="panel-widget-style panel-widget-style-for-233-4-2-1" ><div class="so-widget-sow-editor so-widget-sow-editor-base">
-<div class="siteorigin-widget-tinymce textwidget">
-	<h3 class="q_team_name" style="text-align: center;">HANH / HEAD OF MARKETING &amp; TESTER</h3>
-<p style="text-align: center;">Maybe if I keep believing, my dreams will come to life.</p>
-</div>
-</div></div></div></div></div></div><div id="pg-233-5"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-5" style="padding: 8% 0; " id="clients" data-stretch-type="full" data-overlay="true" ><div id="pgc-233-5-0"  class="panel-grid-cell" ><div id="panel-233-5-0-0" class="so-panel widget widget_sow-headline panel-first-child panel-last-child" data-index="12" ><div class="so-widget-sow-headline so-widget-sow-headline-default-edcf2bc7a6ce"><div class="sow-headline-container ">
-	<h1 class='sow-headline'>OUR CLIENTS</h1>					<div class="decoration">
-						<div class="decoration-inside"></div>
-					</div>
-					<p class='sow-sub-headline'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p></div></div></div></div></div></div><div id="pg-233-6"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-6" style="padding: 0% 0; " data-stretch-type="full-stretched" data-overlay="true" ><div id="pgc-233-6-0"  class="panel-grid-cell" ><div id="panel-233-6-0-0" class="so-panel widget widget_sow-icon panel-first-child panel-last-child" data-index="13" ><div class="so-widget-sow-icon so-widget-sow-icon-default-d67f848b0235">
-<div class="sow-icon-container sow-icon">
-			<span class="sow-icon-ionicons" data-sow-icon="&#xf246;" ></span>	</div>
-</div></div></div><div id="pgc-233-6-1"  class="panel-grid-cell" ><div id="panel-233-6-1-0" class="so-panel widget widget_sow-icon panel-first-child panel-last-child" data-index="14" ><div class="so-widget-sow-icon so-widget-sow-icon-default-d67f848b0235">
-<div class="sow-icon-container sow-icon">
-			<span class="sow-icon-ionicons" data-sow-icon="&#xf34e;" ></span>	</div>
-</div></div></div><div id="pgc-233-6-2"  class="panel-grid-cell" ><div id="panel-233-6-2-0" class="so-panel widget widget_sow-icon panel-first-child panel-last-child" data-index="15" ><div class="so-widget-sow-icon so-widget-sow-icon-default-d67f848b0235">
-<div class="sow-icon-container sow-icon">
-			<span class="sow-icon-ionicons" data-sow-icon="&#xf4ea;" ></span>	</div>
-</div></div></div><div id="pgc-233-6-3"  class="panel-grid-cell" ><div id="panel-233-6-3-0" class="so-panel widget widget_sow-icon panel-first-child panel-last-child" data-index="16" ><div class="so-widget-sow-icon so-widget-sow-icon-default-d67f848b0235">
-<div class="sow-icon-container sow-icon">
-			<span class="sow-icon-ionicons" data-sow-icon="&#xf22e;" ></span>	</div>
-</div></div></div><div id="pgc-233-6-4"  class="panel-grid-cell" ><div id="panel-233-6-4-0" class="so-panel widget widget_sow-icon panel-first-child panel-last-child" data-index="17" ><div class="so-widget-sow-icon so-widget-sow-icon-default-d67f848b0235">
-<div class="sow-icon-container sow-icon">
-			<span class="sow-icon-ionicons" data-sow-icon="&#xf22a;" ></span>	</div>
-</div></div></div></div></div><div id="pg-233-7"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-7" style="padding: 8% 0; " id="contact" data-stretch-type="full" data-overlay="true" ><div id="pgc-233-7-0"  class="panel-grid-cell" ><div id="panel-233-7-0-0" class="so-panel widget widget_sow-headline panel-first-child panel-last-child" data-index="18" ><div class="so-widget-sow-headline so-widget-sow-headline-default-52dfba112210"><div class="sow-headline-container ">
-	<h1 class='sow-headline'>CONTACT US</h1>					<div class="decoration">
-						<div class="decoration-inside"></div>
-					</div>
-					<p class='sow-sub-headline'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p></div></div></div></div></div></div><div id="pg-233-8"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-8" style="padding: 0% 0; " id="contact-2" data-stretch-type="full" data-overlay="true" ><div id="pgc-233-8-0"  class="panel-grid-cell" ><div id="panel-233-8-0-0" class="so-panel widget widget_sow-editor panel-first-child panel-last-child" data-index="19" ><div class="panel-widget-style panel-widget-style-for-233-8-0-0" ><div class="so-widget-sow-editor so-widget-sow-editor-base"><h3 class="widget-title">OUR OFFICE</h3>
-<div class="siteorigin-widget-tinymce textwidget">
-	<p>445 E 86 W 27th St # 601<br />New York<br />NY 10028<br />USA</p>
-</div>
-</div></div></div></div><div id="pgc-233-8-1"  class="panel-grid-cell" ><div id="panel-233-8-1-0" class="so-panel widget widget_sow-contact-form panel-first-child panel-last-child" data-index="20" ><div class="so-widget-sow-contact-form so-widget-sow-contact-form-default-ff6777100b97"><h3 class="widget-title">CONTACT US</h3>	<form action="/tiendauroi/#contact-form-f497"
-          method="POST" class="sow-contact-form" id="contact-form-f497">
-
-		
-		            <div class="sow-form-field sow-form-field-name"><label class="sow-form-field-label-above" for="sow-contact-form-field-your-name-57cc5d11c5ace"><strong>Your Name</strong></label>
-			<span class="sow-field-container">		<input type="text" name="your-name-57cc5d11c5ace" id="sow-contact-form-field-your-name-57cc5d11c5ace" value="" class="sow-text-field"/>
-		</span></div>            <div class="sow-form-field sow-form-field-email"><label class="sow-form-field-label-above" for="sow-contact-form-field-your-email-57cc5d11c5ace"><strong>Your Email</strong></label>
-			<span class="sow-field-container">		<input type="email" name="your-email-57cc5d11c5ace" id="sow-contact-form-field-your-email-57cc5d11c5ace" value="" class="sow-text-field"/>
-		</span></div>            <div class="sow-form-field sow-form-field-subject"><label class="sow-form-field-label-above" for="sow-contact-form-field-subject-57cc5d11c5ace"><strong>Subject</strong></label>
-			<span class="sow-field-container">		<input type="text" name="subject-57cc5d11c5ace" id="sow-contact-form-field-subject-57cc5d11c5ace" value="" class="sow-text-field"/>
-		</span></div>            <div class="sow-form-field sow-form-field-textarea"><label class="sow-form-field-label-above" for="sow-contact-form-field-message-57cc5d11c5ace"><strong>Message</strong></label>
-			<span class="sow-field-container">		<textarea name="message-57cc5d11c5ace" id="sow-contact-form-field-message-57cc5d11c5ace" rows="10"></textarea>
-		</span></div>		<input type="hidden" name="instance_hash" value="f4974a7973517cd09a40dde1e394118f" />
-		<input type="hidden" id="_wpnonce" name="_wpnonce" value="7b7280d9bb" /><input type="hidden" name="_wp_http_referer" value="/tiendauroi/" />
-		
-		<div class="sow-submit-wrapper sow-submit-styled">
-			<input type="submit" value="Contact Us" class="sow-submit"
-				   			>
-		</div>
-	</form>
-	</div></div></div></div></div><div id="pg-233-9"  class="panel-grid panel-has-style" ><div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-233-9" style="padding: 100px 0; " id="contact-3" data-stretch-type="full-stretched" data-overlay="true" ><div id="pgc-233-9-0"  class="panel-grid-cell" ><div id="panel-233-9-0-0" class="so-panel widget widget_sow-google-map panel-first-child panel-last-child" data-index="21" ><div class="so-widget-sow-google-map so-widget-sow-google-map-base">
-<div class="sow-google-map-canvas"
-     style="height:500px;"
-     id="map-canvas-0874160c39a359c398a35a44fa58681f"
-     data-options="{&quot;address&quot;:&quot;445 E 86 W 27th St # 601 New York NY 10028 USA&quot;,&quot;zoom&quot;:12,&quot;mobileZoom&quot;:12,&quot;gestureHandling&quot;:&quot;none&quot;,&quot;disableUi&quot;:false,&quot;keepCentered&quot;:true,&quot;markerIcon&quot;:&quot;&quot;,&quot;markersDraggable&quot;:false,&quot;markerAtCenter&quot;:true,&quot;markerInfoDisplay&quot;:&quot;click&quot;,&quot;markerInfoMultiple&quot;:true,&quot;markerPositions&quot;:&quot;&quot;,&quot;mapName&quot;:&quot;Custom Map&quot;,&quot;mapStyles&quot;:[{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#e9e9e9&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:17}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:29},{&quot;weight&quot;:0.2}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:18}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f5f5f5&quot;},{&quot;lightness&quot;:21}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#dedede&quot;},{&quot;lightness&quot;:21}]},{&quot;elementType&quot;:&quot;labels.text.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;color&quot;:&quot;#ffffff&quot;},{&quot;lightness&quot;:16}]},{&quot;elementType&quot;:&quot;labels.text.fill&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:36},{&quot;color&quot;:&quot;#333333&quot;},{&quot;lightness&quot;:40}]},{&quot;elementType&quot;:&quot;labels.icon&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;geometry&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f2f2f2&quot;},{&quot;lightness&quot;:19}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:20}]},{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#fefefe&quot;},{&quot;lightness&quot;:17},{&quot;weight&quot;:1.2}]}],&quot;directions&quot;:&quot;&quot;,&quot;apiKey&quot;:&quot;AIzaSyDKNkCYUveaFotta1QeLQY3oWk13EYGIXA&quot;,&quot;breakpoint&quot;:780}"
-     data-fallback-image="{&quot;img&quot;:&quot;&quot;}"></div>
-</div></div></div></div></div></div>							</div><!-- .entry-content -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-			</div>
-		</div>
-	</div><!-- #content -->
-
-	
-	
-    <a class="go-top"><i class="fa fa-angle-up"></i></a>
-		
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info container">
-			<a href="http://wordpress.org/">Proudly powered by WordPress</a>
-			<span class="sep"> | </span>
-			Theme: <a href="https://athemes.com/theme/sydney" rel="designer">Sydney</a> by aThemes.		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-
-	
-</div><!-- #page -->
-
-<link rel='stylesheet' id='sow-headline-default-dc2cd140d595-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-headline-default-dc2cd140d595.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-headline-default-52dfba112210-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-headline-default-52dfba112210.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-features-default-0cf5901baecd-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-features-default-0cf5901baecd.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='siteorigin-widgets-css'  href='https://tiendauroi.github.io/wp-content/plugins/so-widgets-bundle/widgets/features/css/style.css?ver=1.15.3' type='text/css' media='all' />
-<link rel='stylesheet' id='siteorigin-widget-icon-font-elegantline-css'  href='https://tiendauroi.github.io/wp-content/plugins/so-widgets-bundle/icons/elegantline/style.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-headline-default-fc7f281bd04e-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-headline-default-fc7f281bd04e.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-image-grid-default-c51e448a0a62-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-image-grid-default-c51e448a0a62.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-image-default-bd5cd9da0588-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-image-default-bd5cd9da0588.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-headline-default-edcf2bc7a6ce-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-headline-default-edcf2bc7a6ce.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-icon-default-d67f848b0235-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-icon-default-d67f848b0235.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='siteorigin-widget-icon-font-ionicons-css'  href='https://tiendauroi.github.io/wp-content/plugins/so-widgets-bundle/icons/ionicons/style.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-contact-form-default-ff6777100b97-css'  href='https://tiendauroi.github.io/wp-content/uploads/siteorigin-widgets/sow-contact-form-default-ff6777100b97.css?ver=5.1.1' type='text/css' media='all' />
-<link rel='stylesheet' id='sow-google-map-css'  href='https://tiendauroi.github.io/wp-content/plugins/so-widgets-bundle/widgets/google-map/css/style.css?ver=1.15.3' type='text/css' media='all' />
-<script type='text/javascript'>
-/* <![CDATA[ */
-var wpcf7 = {"apiSettings":{"root":"https:\/\/tiendauroi.github.io\/index.php\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.1'></script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/themes/sydney/js/scripts.js?ver=5.1.1'></script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/themes/sydney/js/main.min.js?ver=20180213'></script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/themes/sydney/js/skip-link-focus-fix.js?ver=20130115'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var WPGlobus = {"version":"1.9.13","language":"en","enabledLanguages":["en","vi"]};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/plugins/wpglobus/includes/js/wpglobus.min.js?ver=1.9.13'></script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var panelsStyles = {"fullContainer":"body"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/plugins/siteorigin-panels/js/styling-2102.min.js?ver=2.10.2'></script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/plugins/so-widgets-bundle/js/lib/imagesloaded.pkgd.min.js?ver=3.2.0'></script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/plugins/so-widgets-bundle/widgets/image-grid/js/image-grid.min.js?ver=1.15.3'></script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/plugins/so-widgets-bundle/widgets/contact/js/contact.min.js?ver=1.15.3'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var soWidgetsGoogleMap = {"geocode":{"noResults":"There were no results for the place you entered. Please try another."}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://tiendauroi.github.io/wp-content/plugins/so-widgets-bundle/js/sow.google-map.min.js?ver=1.15.3'></script>
-<script type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js","");</script>
 </body>
 </html>
