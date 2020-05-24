@@ -107,15 +107,38 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
       color: #4b4340;
       font-weight: bold;
     }
+
+    .toolzone{
+      display: block;
+      margin: 1em;
+    }
+
   </style>
 
   <script>
-    $(document).ready(function(){
-    $("#myBtn").click(function(){
+
+  $(document).ready(function(){
+    $('#myInput').on('propertychange input', function (e) {
+      var valueChanged = false;
+
+      if (e.type=='propertychange') {
+          valueChanged = e.originalEvent.propertyName=='value';
+      } else {
+          valueChanged = true;
+      }
+      if (valueChanged) {
         var str = $("#myInput").val();
-        alert(str);
-    });
+        $('#shortcodeValue').html('[airtable_cp sheet_name=' + str +']');
+      }
   });
+  $("#copybutton").click(function(){
+    $('#shortcodeValue').focus();
+    $('#shortcodeValue').select();
+    document.execCommand("copy");
+  });
+});
+
+
   </script>
 
 </head>
@@ -312,7 +335,21 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
         <li>
           <p><a href="https://airtable.com/tbluxDrnseWxOl09w/viwHZhx5qozqDZMMO" target="_blank">Base cập nhật mã giảm giá Airtable</a></p>
         </li>
-
+        <li>
+          <p><a href="https://www.tiendauroi.com/wp-admin/admin.php?page=_options&tab=12" target="_blank">Link cập nhật danh sách bảng airtable</a></p>
+        </li>
+        <li>
+          <p><a href="https://www.tiendauroi.com/get-at/?get_airtable" target="_blank">Bấm vào đây để cập nhật nội dung mới từ Airtable.</a></p>
+        </li>
+        <br>
+        <div class="toolTaoShortCode">
+          <h3>Tool tạo shortcode</h3>
+          <p>Điền đoạn code trong Airtable API đã copy vào ô input bên dưới rồi ấn nút copy để lấy shortcode. Shortcode này đặt ở vị trí nào trên website Tiendauroi.com sẽ thể hiện bảng lấy mã tương ứng ở đó.</p>
+          <p><b>Lưu ý: </b>cần phải bấm vào link cập nhật nội dung airtable bên trên trước để website lấy data từ airtable. Sau đó shortcode mới chạy</p>
+          <input id="myInput" class="toolzone" style="width:500px;" placeholder="Điền code tên bảng từ Airtable API vào đây"></input>
+          <textarea id="shortcodeValue" class="toolzone" rows="2" cols="120"></textarea>
+          <button id='copybutton' style="width:100px;height:25px;" class="toolzone">Copy shortcode</button>
+        </div>
 
 
 
