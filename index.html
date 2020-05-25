@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Shortcut giúp tiết kiệm thời gian cho team Tiendauroi" />
   <meta name="author" content="HoangAnhDinhNgoc" />
+  <link rel="icon" href="https://www.tiendauroi.com/wp-content/uploads/2020/02/cropped-logo-mới-nav-1.png">
+
   <!--
 //////////////////////////////////////////////////////
 
@@ -50,6 +52,15 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
       background: rgba(100, 98, 86, 0.8);
     }
 
+    ::-moz-selection { /* Code for Firefox */
+      color: #d3cebb;
+      background: rgba(100, 98, 86, 0.8);
+    }
+    ::selection {
+      color: #d3cebb;
+      background: rgba(100, 98, 86, 0.8);
+    }
+
     body {
       background-color: #ccc6b0;
       background-image: linear-gradient(90deg, rgba(198, 192, 170, .5) 30%, transparent 30%),
@@ -58,7 +69,8 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
     }
 
     .coreSystem {
-      height: 1000em;
+      display: inline-block;
+      width: 100%;
       box-shadow: inset 0px 0px 100px 20px rgba(0, 0, 0, 0.3);
     }
 
@@ -81,7 +93,7 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
 
     .dropContent:hover {
       color: #d3cebb;
-      background: rgba(0, 0, 0, 0.2);
+      background: #4e493a;
     }
 
     ul {
@@ -111,14 +123,56 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
     .toolzone{
       display: block;
       margin: 1em;
+      width: 100%;
+      max-width: 90%;
+      outline: none;
+      border: 2px solid rgba(100, 98, 86, 1);
     }
+
+    #inputAPI {
+    color: #4b4340;
+    background: rgba(216, 210, 186, .5);
+    }
+
+    #shortcodeValue {
+    color: #d3cebb;
+    background: rgba(100, 98, 86, 0.8);
+    }
+
+    .themebutton {
+      cursor: pointer;
+      width: 10em;
+      height: 2em;
+      font-weight: bold;
+      color: #4b4340;
+      border: none;
+      background: linear-gradient(to right, #4e493a 50%, rgba(0, 0, 0, 0.2) 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all .2s ease-out;
+    }
+
+    .themebutton:hover {
+      color: #d3cebb;
+      background-position: left bottom;
+    }
+
+    .linkbutton {
+      text-align:center;
+      text-decoration: none;
+      margin-left:0px;
+      font-size: 0.9em;
+    }
+
 
   </style>
 
   <script>
 
   $(document).ready(function(){
-    $('#myInput').on('propertychange input', function (e) {
+
+    // Create Airtable Shortcode script
+    $('#inputAPI').on('propertychange input', function (e) {
       var valueChanged = false;
 
       if (e.type=='propertychange') {
@@ -127,7 +181,7 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
           valueChanged = true;
       }
       if (valueChanged) {
-        var str = $("#myInput").val();
+        var str = $("#inputAPI").val();
         $('#shortcodeValue').html('[airtable_cp sheet_name=' + str +']');
       }
   });
@@ -136,6 +190,38 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
     $('#shortcodeValue').select();
     document.execCommand("copy");
   });
+
+  // Sounds
+  var tutorialSound = document.getElementById("tutorial-sound");
+  var hoverSound = document.getElementById("hover-sound");
+  var clickSound = document.getElementById("click-sound");
+  var openlinkSound = document.getElementById("open-link-sound");
+
+
+  $(".dropContent,.tutorial").hover(function(){
+    hoverSound.play();
+    }, function(){
+    hoverSound.load();
+  });
+
+  $(".tutorial").click(function(){
+    tutorialSound.play();
+    });
+
+  $("a").click(function(){
+    openlinkSound.play();
+    });
+
+  $(".dropContent,.themebutton").click(function(){
+    clickSound.play();
+    });
+
+  $("a").click(function(){
+    openlinkSound.play();
+    });
+
+    // Sounds control
+
 });
 
 
@@ -144,6 +230,12 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
 </head>
 
 <body>
+  <audio id="tutorial-sound"><source src="sounds/core_1.ogg" type="audio/ogg"></audio>
+  <audio id="hover-sound"><source src="sounds/core_16.ogg" type="audio/ogg"></audio>
+  <audio id="click-sound"><source src="sounds/core_52.ogg" type="audio/ogg"></audio>
+  <audio id="open-link-sound"><source src="sounds/core_58.ogg" type="audio/ogg"></audio>
+  <audio id="theme" autoplay loop><source src="sounds/fortress-of-lies-the-bunker.ogg" type="audio/ogg"></audio>
+
   <div class='coreSystem'>
     <h1 class="title">Tiendauroi's shortcut dashboard</h1>
 
@@ -151,6 +243,8 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
     <a href="https://www.tiendauroi.com/" class="logo" target="_blank">
       <img width="275" height="80" src="https://www.tiendauroi.com/wp-content/uploads/2020/03/logo-slogan-5.png" class="top-logo" alt=""
         srcset="https://www.tiendauroi.com/wp-content/uploads/2020/03/logo-slogan-5.png 275w, https://www.tiendauroi.com/wp-content/uploads/2020/03/logo-slogan-5-150x44.png 150w" sizes="(max-width: 275px) 100vw, 275px"></a>
+
+
 
     <!-- System Info -->
 
@@ -339,18 +433,18 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
           <p><a href="https://www.tiendauroi.com/wp-admin/admin.php?page=_options&tab=12" target="_blank">Link cập nhật danh sách bảng airtable</a></p>
         </li>
         <li>
-          <p><a href="https://www.tiendauroi.com/get-at/?get_airtable" target="_blank">Bấm vào đây để cập nhật nội dung mới từ Airtable.</a></p>
+          <p>Bấm nút dưới đây để cập nhật nội dung mới từ Airtable: </p><a class="themebutton toolzone linkbutton" id="update-airtale" href="https://www.tiendauroi.com/get-at/?get_airtable" target="_blank">Update</a>
         </li>
         <br>
+        <!-- TOOL TẠO SHORTCODE -->
         <div class="toolTaoShortCode">
           <h3>Tool tạo shortcode</h3>
-          <p>Điền đoạn code trong Airtable API đã copy vào ô input bên dưới rồi ấn nút copy để lấy shortcode. Shortcode này đặt ở vị trí nào trên website Tiendauroi.com sẽ thể hiện bảng lấy mã tương ứng ở đó.</p>
+          <p>Điền đoạn code trong Airtable API vào ô input bên dưới rồi ấn nút copy để lấy shortcode. Shortcode này đặt ở vị trí nào trên website Tiendauroi.com sẽ thể hiện bảng lấy mã tương ứng ở đó.</p>
           <p><b>Lưu ý: </b>cần phải bấm vào link cập nhật nội dung airtable bên trên trước để website lấy data từ airtable. Sau đó shortcode mới chạy</p>
-          <input id="myInput" class="toolzone" style="width:500px;" placeholder="Điền code tên bảng từ Airtable API vào đây"></input>
-          <textarea id="shortcodeValue" class="toolzone" rows="2" cols="120"></textarea>
-          <button id='copybutton' style="width:100px;height:25px;" class="toolzone">Copy shortcode</button>
+          <input id="inputAPI" class="toolzone" placeholder="Điền code bảng cần tạo Shortcode từ Airtable API vào đây"></input>
+          <p><b>Shortcode: </b><textarea id="shortcodeValue" readonly class="toolzone"></textarea>
+          <button class='themebutton toolzone'>Copy Shortcode</button>
         </div>
-
 
 
 
@@ -471,7 +565,7 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
       <div class='dropContent'>Chuyển cột thành list</div>
       <ul class='content'>
         <li>
-          <p><a href="hoanganhdinhngoc.github.io/cdn/column-to-list-converter.html" target="_blank">Column-to-list-converter</a></p>
+          <p><a href="https://hoanganhdinhngoc.github.io/cdn/column-to-list-converter.html" target="_blank">Column-to-list-converter</a></p>
         </li>
         <li>
           <p><b>Mô tả: </b>Dùng khi cần link một record airtale tói nhiều record khác, ví dụ như khi tính lương cho ctv theo số bài.</p>
@@ -570,7 +664,7 @@ LinkedIn:   https://vn.linkedin.com/in/hoang-anh-dinh-ngoc-1a2037129
   </div>
 
 
-  <!-- SCRIPT -->
+  <!-- Interactive -->
 
   <script type='text/javascript'>
     // fade in section
